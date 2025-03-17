@@ -1,0 +1,156 @@
+/* Default Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/golden-lights-on-hassan-ii-mosque-and-minaret-at-night-in-casabl-reimar-gaertner.jpg') no-repeat center center fixed; /* صورة خلفية */
+  background-size: cover;
+  color: white;
+}
+
+.home {
+  padding: 20px;
+}
+
+.city-selector {
+  margin: 20px auto;
+  width: auto;
+}
+
+.prayer-flexx {
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+select {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+.title {
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  width: 30%;
+  padding: 10px;
+  margin: auto;
+  font-family: 'Papyrus', 'Harrington', 'Wisp', 'Arkana', 'Rivendell', fantasy;
+}
+
+.time-remaining {
+  margin: 20px 0;
+  font-size: 18px;
+  color: #fff;
+}
+
+.current-info h1 {
+  font-size: 30px;
+  color: white;
+}
+
+.current-info p {
+  margin: 5px 0;
+  color: #c0c0c0;
+}
+
+.prayer-times {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.prayer-times h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.prayer-flex {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.prayer-item {
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  width: 17%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: black;
+}
+
+.prayer-item img {
+  width: 100%;
+  height: 170px;
+}
+
+.prayer-info b {
+  display: block;
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.prayer-info {
+  margin: 10px;
+}
+
+.prayer-info span {
+  font-family: Courier, monospace;
+  font-size: 30px;
+  color: #555;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .prayer-flexx {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    width: 70%;
+    font-size: 18px;
+  }
+
+  .prayer-item {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+
+  .time-remaining {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .prayer-flexx {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .prayer-item {
+    width: 90%;
+  }
+
+  select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .time-remaining {
+    font-size: 16px;
+  }
+}
